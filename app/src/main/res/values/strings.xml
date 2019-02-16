@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jordan Weather</string>
+    <string name="connection_error_message">Connection Error</string>
+    <string name="temperatureForamt">%.1f °C</string>
+    <string name="transitionBackground">transitionBackground</string>
+    <string name="transitionImageViewWeather">transitionImageViewWeather</string>
+    <string name="transitionCityNameWeather">transitionCityNameWeather</string>
+    <string name="dateForamt1">yyyy-MM-dd HH:mm:ss</string>
+    <string name="dateFormat2">HH:mm</string>
+</resources>
