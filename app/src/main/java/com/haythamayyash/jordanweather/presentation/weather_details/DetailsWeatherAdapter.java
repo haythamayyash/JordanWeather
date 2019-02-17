@@ -1,4 +1,4 @@
-package com.haythamayyash.jordanweather;
+package com.haythamayyash.jordanweather.presentation.weather_details;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.haythamayyash.jordanweather.R;
 import com.haythamayyash.jordanweather.common.Constants;
 import com.haythamayyash.jordanweather.model.FullWeatherDetails;
 import com.haythamayyash.jordanweather.model.Weather;

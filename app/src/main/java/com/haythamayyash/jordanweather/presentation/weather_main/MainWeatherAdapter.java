@@ -1,4 +1,4 @@
-package com.haythamayyash.jordanweather;
+package com.haythamayyash.jordanweather.presentation.weather_main;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.haythamayyash.jordanweather.R;
 import com.haythamayyash.jordanweather.common.Constants;
 import com.haythamayyash.jordanweather.model.Main;
 import com.haythamayyash.jordanweather.model.Weather;

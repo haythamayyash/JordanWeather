@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.haythamayyash.jordanweather.DetailsWeatherAdapter;
+import com.haythamayyash.jordanweather.presentation.weather_details.DetailsWeatherAdapter;
 import com.haythamayyash.jordanweather.R;
 import com.haythamayyash.jordanweather.common.Constants;
 import com.haythamayyash.jordanweather.model.Main;

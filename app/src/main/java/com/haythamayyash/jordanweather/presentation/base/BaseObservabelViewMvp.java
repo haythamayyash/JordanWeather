@@ -3,7 +3,7 @@ package com.haythamayyash.jordanweather.presentation.base;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class BaseObservabelViewMvp<ListenerType> extends BaseViewMvp
+public class BaseObservabelViewMvp<ListenerType> extends BaseViewMvp
         implements ObservableViewMvp<ListenerType> {
     private List<ListenerType> mListeners = new ArrayList<>();
 

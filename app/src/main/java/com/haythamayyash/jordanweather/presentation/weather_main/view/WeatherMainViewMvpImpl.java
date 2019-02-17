@@ -6,12 +6,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.ProgressBar;
 
-import com.haythamayyash.jordanweather.MainWeatherAdapter;
+import com.haythamayyash.jordanweather.presentation.weather_main.MainWeatherAdapter;
 import com.haythamayyash.jordanweather.R;
 import com.haythamayyash.jordanweather.network.FetchWeatherUseCase;
 import com.haythamayyash.jordanweather.presentation.base.BaseObservabelViewMvp;
@@ -32,6 +31,7 @@ public class WeatherMainViewMvpImpl extends BaseObservabelViewMvp<WeatherMainVie
     public void bindCityIdListAndPrepareAdapter(List<Integer> cityIdList, FetchWeatherUseCase fetchWeatherUseCase) {
         recyclerViewWeather.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         recyclerViewWeather.setAdapter(new MainWeatherAdapter(getContext(), this, cityIdList, fetchWeatherUseCase));
+        animateRecyclerView();
     }
 
     @Override
