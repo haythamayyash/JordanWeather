@@ -17,7 +17,7 @@ public class WeatherDetailsActivity extends BaseActivity {
         weatherDetailsViewMvp = compositionRoot.getWeatherDetailsViewMvp(null);
         setContentView(weatherDetailsViewMvp.getView());
 
-        presenterDetails = new PresenterDetails(compositionRoot.getLocalDataBase());
+        presenterDetails = compositionRoot.getPresenterDetails();
         presenterDetails.bindView(weatherDetailsViewMvp);
         presenterDetails.onCreate(getIntent());
     }

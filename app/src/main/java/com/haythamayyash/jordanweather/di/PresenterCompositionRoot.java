@@ -7,7 +7,9 @@ import android.view.ViewGroup;
 
 import com.haythamayyash.jordanweather.network.FetchWeatherUseCase;
 import com.haythamayyash.jordanweather.network.WeatherApi;
+import com.haythamayyash.jordanweather.presentation.weather_details.presenter.PresenterDetails;
 import com.haythamayyash.jordanweather.presentation.weather_details.view.WeatherDetailsViewMvpImpl;
+import com.haythamayyash.jordanweather.presentation.weather_main.presenter.MainPresneter;
 import com.haythamayyash.jordanweather.presentation.weather_main.view.WeatherMainViewMvpImpl;
 import com.haythamayyash.jordanweather.util.LocalDataBase;
 
@@ -50,5 +52,14 @@ public class PresenterCompositionRoot {
 
     public LocalDataBase getLocalDataBase() {
         return compositionRoot.getLocalDataBase();
+    }
+
+    public PresenterDetails getPresenterDetails() {
+        return new PresenterDetails(getLocalDataBase());
+    }
+
+    public MainPresneter getMainPresenter() {
+        return new MainPresneter(getLocalDataBase()
+                , getFetchWeatherUseCase());
     }
 }

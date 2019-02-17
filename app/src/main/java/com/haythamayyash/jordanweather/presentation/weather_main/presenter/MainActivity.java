@@ -18,8 +18,7 @@ public class MainActivity extends BaseActivity {
         PresenterCompositionRoot compositionRoot = getCompositionRoot(this);
         WeatherMainViewMvpImpl weatherMainViewMvp = compositionRoot.getWeatherMainViewMvp(null);
 
-        mainPresneter = new MainPresneter(compositionRoot.getLocalDataBase()
-                , compositionRoot.getFetchWeatherUseCase());
+        mainPresneter = compositionRoot.getMainPresenter();
         mainPresneter.bindView(weatherMainViewMvp);
         mainPresneter.onCreate();
         setContentView(weatherMainViewMvp.getView());

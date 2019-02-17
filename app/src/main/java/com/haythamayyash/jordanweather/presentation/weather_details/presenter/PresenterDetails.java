@@ -17,7 +17,7 @@ public class PresenterDetails {
     private final LocalDataBase localDataBase;
     private WeatherDetailsViewMvp weatherDetailsViewMvpImpl;
 
-    PresenterDetails(LocalDataBase localDataBase) {
+    public PresenterDetails(LocalDataBase localDataBase) {
         this.localDataBase = localDataBase;
     }
 
