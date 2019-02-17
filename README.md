@@ -1,9 +1,9 @@
 # JordanWeather
 Demo Weather App 
 this project include: 
-  - api from openweathermap.org .
-  - retrofit with rxjava to get api.
-  - realm to cache data.
+  - Api from openweathermap.org .
+  - Retrofit with Rxjava to get api.
+  - Realm to cache data.
   - MVP Architectural pattern.
   - Dependecy Injection Architectural pattern.
 
